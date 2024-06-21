@@ -73,8 +73,10 @@ $test: map-remove(map-get($themes, theme-1), light);
 
 //map-merge
 @debug map-merge(
+  // first map
   map-get($themes, theme-1),
   (
+    // second
     test: (
       "a": "d",
       "b": "d",
