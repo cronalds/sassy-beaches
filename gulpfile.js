@@ -6,7 +6,6 @@ const s = gulpSass(sass);
 function buildStyles() {
   // multiple file output
   // src(["./scss/main.scss", "./scss/test.scss"])
-  
   return src(["./scss/main.scss"])
     .pipe(s().on("error", s.logError))
     .pipe(dest("./css"));
@@ -18,3 +17,4 @@ function watchTask() {
 }
 
 export default series(buildStyles, watchTask);
+
