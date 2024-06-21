@@ -9,6 +9,43 @@
 -- page imports
 **/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+.theme-1 .light .primary {
+  color: #eab308;
+}
+.theme-1 .light .secondary {
+  color: #eab308;
+}
+.theme-1 .light .brand {
+  color: #eab308;
+}
+.theme-1 .light .brandSkew {
+  color: #eab308;
+}
+.theme-1 .light .brandDark {
+  color: #eab308;
+}
+.theme-1 .light .brandLight {
+  color: #eab308;
+}
+.theme-1 .dark .primary {
+  color: #6366f1;
+}
+.theme-1 .dark .secondary {
+  color: #6366f1;
+}
+.theme-1 .dark .brand {
+  color: #6366f1;
+}
+.theme-1 .dark .brandSkew {
+  color: #6366f1;
+}
+.theme-1 .dark .brandDark {
+  color: #6366f1;
+}
+.theme-1 .dark .brandLight {
+  color: #6366f1;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -28,13 +65,13 @@ body {
 }
 
 .light {
-  background-color: #FFFFFF;
-  color: #111827;
+  background-color: #ffffff;
+  color: #ffffff;
 }
 
 .dark {
-  background-color: #111827;
-  color: #FFFFFF;
+  background-color: #ffffff;
+  color: #ffffff;
 }
 
 .customGrid {
@@ -44,3 +81,11 @@ body {
   grid-template-columns: repeat(2, 1fr);
   max-width: 800px;
 }
+
+/*
+=========================
+debug
+=========================
+@debug math.div(5, 2);
+=========================
+*/

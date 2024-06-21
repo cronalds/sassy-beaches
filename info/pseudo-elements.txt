@@ -1,0 +1,26 @@
+Pseudo-elements (::):
+
+Selects a specific part of an element.
+
+Examples:
+
+::before:
+Inserts content before the content of an element.
+
+::after:
+Inserts content after the content of an element.
+
+::first-line:
+Applies styles to the first line of a block-level element.
+
+::first-letter:
+Applies styles to the first letter of the first line of a block-level element.
+
+::selection:
+Applies styles to the portion of an element that is selected by the user.
+
+::placeholder (not standardized yet):
+Applies styles to the placeholder text in an input or textarea element.
+
+::backdrop (for <dialog> elements):
+Allows styling of the backdrop behind a modal dialog.

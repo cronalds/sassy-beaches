@@ -1,23 +1,100 @@
 // TYPOGRAPHY
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-$primaryFont: 'Open Sans', apple-system, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+$primaryFont: "Open Sans", apple-system, sans-serif;
 
 // COLORS (https://tailwindcss.com/docs/customizing-colors)
-$primaryColor: #FFFFFF;
-$complementaryColor: #111827;
-$complementarySkewColor: #1f2937;
-$complementaryLightColor: #374151;
+$primaryColor: #ffffff;
+$secondaryColor: #111827;
+$complementaryColor: #ffffff;
 $brandColor: #60a5fa;
 $brandSkewColor: #818cf8;
 $brandDarkColor: #3b82f6;
-$highlightColor: #9ca3af;
-$highlightSkewColor: #d1d5db;
+$brandLightColor: #3b82f6;
 $successColor: #16a34a;
 $errorColor: #dc2626;
+$warning: #f59e0b;
+$info: #3b82f6;
+$blue: #60a5fa;
+$red: #ef4444;
+$yellow: #f59e0b;
+$green: #16a34a;
+$purple: #a855f7;
+$orange: #f97316;
+$indigo: #6366f1;
+$pink: #ec4899;
+$grey: #f3f4f6;
+$black: #111827;
+$white: #ffffff;
+
+$colors: (
+  "primary": $primaryColor,
+  "secondary": $secondaryColor,
+  "brand": $brandColor,
+  "brandSkew": $brandSkewColor,
+  "brandDark": $brandDarkColor,
+  "brandLight": $brandLightColor,
+  "success": $successColor,
+  "error": $errorColor,
+  "warning": $warning,
+  "info": $info,
+  "blue": $blue,
+  "red": $red,
+  "yellow": $yellow,
+  "green": $green,
+  "purple": $purple,
+  "orange": $orange,
+  "indigo": $indigo,
+  "pink": $pink,
+  "grey": $grey,
+  "black": $black,
+  "white": $white,
+);
 
 // THEME COLORS
 $lightMode: #eab308;
 $darkMode: #6366f1;
+
+$themes: (
+  theme-1: (
+    light: (
+      "primary": $lightMode,
+      "secondary": $lightMode,
+      "brand": $lightMode,
+      "brandSkew": $lightMode,
+      "brandDark": $lightMode,
+      "brandLight": $lightMode,
+    ),
+    dark: (
+      "primary": $darkMode,
+      "secondary": $darkMode,
+      "brand": $darkMode,
+      "brandSkew": $darkMode,
+      "brandDark": $darkMode,
+      "brandLight": $darkMode,
+    ),
+  ),
+);
+
+@debug map-get($themes, "theme-1");
+
+// map over inner maps
+@each $theme-name, $theme-modes in $themes {
+  .#{$theme-name} {
+    @each $mode-name, $mode-colors in $theme-modes {
+      @debug $mode-name;
+      .#{$mode-name} {
+        @each $color-name, $color-value in $mode-colors {
+          @debug $color-name;
+          @debug $color-value;
+          // Generate CSS or debug statements as needed
+          .#{$color-name} {
+            color: $color-value;
+          }
+        }
+      }
+    }
+  }
+}
 
 // MIXIN: Set text color dynamically
 @mixin setBackground($color) {
@@ -25,9 +102,9 @@ $darkMode: #6366f1;
   color: set-text-color($color);
 }
 // FUNCTIONS
-@function set-text-color($color){
-  @if(lightness($color) > 70) { 
-    @return $complementaryColor; 
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return $complementaryColor;
   } @else {
     @return $primaryColor;
   }

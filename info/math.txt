@@ -1,0 +1,41 @@
+
+@use "sass:math";
+
+give base values a unit and operate mathematically upon the base val to get pixel values for variants
+
+$base: 16px;
+$base-2: $base * 2;
+$base-3: $base * 3;
+
+.base-test {
+  font-size: $base;
+  font-size: $base-2;
+  font-size: $base-3;
+}
+
+========
+
+math.div to divide
+
+$divBase: math.div($base, toDivideBy);
+
+.divBaseTest {
+  font-size: $divBase;
+}
+
+========
+
+$addBaseTest: 5em;
+
+$tt: $addBaseTest + $addBaseTest;
+
+.test {
+  font-size: $t;
+  font-size: $tt;
+}
+
+math.floor(2.2) // floors to 2
+
+math.max(val1, val2) // finds max val
+
+

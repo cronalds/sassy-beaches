@@ -1,0 +1,50 @@
+ //? nested
+    .example{
+        .another{
+        //! compiles to
+        //! .example{}
+        //! .example .another{}
+        }
+    }
+
+    //? parent selector
+    .example{
+        &-this{
+            //! compiles to
+            //! .example{}
+            //! .example-this{}
+        }
+    }
+
+
+    This SCSS selector targets .direct-child elements that are direct children of .example. It generates a CSS selector .example > .direct-child.
+
+    .example > .direct-child{}
+
+
+    This selector targets all elements with class .select-all-children-with-this-class that are descendants of .example. It generates a CSS selector .example .select-all-children-with-this-class.
+
+    .example .select-all-children-with-this-class{}
+
+
+    This SCSS selector targets .sibling-with-this-class-directly-next-to-it elements that are immediately preceded by .example in the HTML structure. It generates a CSS selector .example + .sibling-with-this-class-directly-next-to-it. vvv
+
+    .example + .sibling-with-this-class-directly-next-to-it{}
+
+
+    This SCSS selector targets all direct children (* > *) of any parent element (*). It generates a CSS selector * > *, which selects all elements that are direct children of their parent.
+    * > * {} // selects all direct children
+
+
+    This SCSS selector targets all sibling elements (* + *) that are immediately preceded by another element (*). It generates a CSS selector * + *, which selects elements that share the same parent and are next to each other.
+    * + * {} // selects all siblings
+
+
+    This SCSS selector targets all sibling elements (* ~ *) that come after the specified element (*). It generates a CSS selector * ~ *, which selects all siblings that follow, not necessarily immediately.
+    * ~ * {} // selects all siblings but is somehow different
+
+===============
+Attribute selector ([]):
+
+Selects elements based on the presence or value of a given attribute.
+Example: [type="text"] selects all elements with type="text".

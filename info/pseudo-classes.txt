@@ -1,0 +1,61 @@
+
+Pseudo-classes (:):
+
+Selects elements based on their state or position.
+Examples:
+
+:hover:
+Applies styles when an element is being hovered over by the mouse pointer.
+
+:active:
+Applies styles to an element while it is being activated by the user (usually when clicking).
+
+:focus:
+Applies styles to an element that currently has keyboard focus.
+
+:first-child:
+Selects an element that is the first child of its parent.
+
+:last-child:
+Selects an element that is the last child of its parent.
+
+:nth-child(n):
+Selects an element that is the nth child of its parent, where n can be a number, a keyword, or a formula.
+
+:nth-last-child(n):
+Selects an element that is the nth child counting from the end of its parent's children.
+
+:nth-of-type(n):
+Selects an element that is the nth child of its parent of a specific type.
+
+:nth-last-of-type(n):
+Selects an element that is the nth child counting from the end of its parent's children of a specific type.
+
+:not(selector):
+Selects all elements except those that match the specified selector.
+
+:checked:
+Applies styles to an input element that is checked (e.g., checkboxes or radio buttons).
+
+:disabled:
+Applies styles to form elements that are disabled.
+
+:required:
+Applies styles to form elements that have the required attribute.
+
+:empty:
+Selects elements that have no children (including text nodes).
+
+:first-of-type:
+Selects the first element of its type among a group of sibling elements.
+
+:last-of-type:
+Selects the last element of its type among a group of sibling elements. 
+:only-child:
+Selects an element that is the only child of its parent.
+
+:only-of-type:
+Selects an element that is the only element of its type among a group of sibling elements.
+
+:target:
+Applies styles to the targeted element in the URL fragment identifier.
