@@ -1,3 +1,4 @@
+@use "sass:math";
 // TYPOGRAPHY
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 $primaryFont: "Open Sans", apple-system, sans-serif;
@@ -5,11 +6,6 @@ $primaryFont: "Open Sans", apple-system, sans-serif;
 // COLORS (https://tailwindcss.com/docs/customizing-colors)
 $primaryColor: #ffffff;
 $secondaryColor: #111827;
-$complementaryColor: #ffffff;
-$brandColor: #60a5fa;
-$brandSkewColor: #818cf8;
-$brandDarkColor: #3b82f6;
-$brandLightColor: #3b82f6;
 $successColor: #16a34a;
 $errorColor: #dc2626;
 $warning: #f59e0b;
@@ -20,7 +16,6 @@ $yellow: #f59e0b;
 $green: #16a34a;
 $purple: #a855f7;
 $orange: #f97316;
-$indigo: #6366f1;
 $pink: #ec4899;
 $grey: #f3f4f6;
 $black: #111827;
@@ -29,10 +24,6 @@ $white: #ffffff;
 $colors: (
   "primary": $primaryColor,
   "secondary": $secondaryColor,
-  "brand": $brandColor,
-  "brandSkew": $brandSkewColor,
-  "brandDark": $brandDarkColor,
-  "brandLight": $brandLightColor,
   "success": $successColor,
   "error": $errorColor,
   "warning": $warning,
@@ -43,7 +34,6 @@ $colors: (
   "green": $green,
   "purple": $purple,
   "orange": $orange,
-  "indigo": $indigo,
   "pink": $pink,
   "grey": $grey,
   "black": $black,
@@ -61,35 +51,121 @@ $themes: (
       "secondary": $lightMode,
       "brand": $lightMode,
       "brandSkew": $lightMode,
-      "brandDark": $lightMode,
-      "brandLight": $lightMode,
     ),
     dark: (
       "primary": $darkMode,
       "secondary": $darkMode,
       "brand": $darkMode,
       "brandSkew": $darkMode,
-      "brandDark": $darkMode,
-      "brandLight": $darkMode,
     ),
   ),
 );
 
-@debug map-get($themes, "theme-1");
+// need to do this to get access to the map in another map
 
-// map over inner maps
+// map-get($themes, theme-1) theme-1 being the first nested map; dark being the key of a further nested map to get from theme-1 in themes
+@debug map-get(map-get($themes, theme-1), dark);
+
+// map-get($themes, theme-1) theme-1 being the first nested map; light being the key of a further nested map in theme-1 to remove; returns a new map and leaves the original unaltered
+$test: map-remove(map-get($themes, theme-1), light);
+@debug "removed:: ", map-get(map-get($themes, theme-1), light);
+@debug $test;
+
+//map-merge
+@debug map-merge(
+  map-get($themes, theme-1),
+  (
+    test: (
+      "a": "d",
+      "b": "d",
+      "c": "d",
+    ),
+  )
+);
+
+// loop over inner maps; nested @each for nested maps
 @each $theme-name, $theme-modes in $themes {
   .#{$theme-name} {
     @each $mode-name, $mode-colors in $theme-modes {
       @debug $mode-name;
       .#{$mode-name} {
         @each $color-name, $color-value in $mode-colors {
-          @debug $color-name;
-          @debug $color-value;
+          // get bool
+          @debug map-has-key($map: $mode-colors, $key: $color-name);
+
           // Generate CSS or debug statements as needed
           .#{$color-name} {
             color: $color-value;
           }
+        }
+      }
+    }
+  }
+}
+
+@each $key, $value in $colors {
+  .text-#{$key} {
+    color: $value;
+  }
+  .bg-#{$key} {
+    background-color: $value;
+  }
+
+  .text-#{$key}-hover {
+    &:hover {
+      color: $value;
+    }
+  }
+
+  .bg-#{$key}-hover {
+    &:hover {
+      background-color: $value;
+    }
+  }
+}
+
+@each $key, $value in $colors {
+  @if (
+    $value != white and $value != black and $key != "white" and $key != "black"
+  ) {
+    @for $i from 1 through 9 {
+      .text-light-#{$key}-#{$i} {
+        color: mix(white, $value, $i * 10%);
+      }
+
+      .bg-light-#{$key}-#{$i} {
+        background-color: mix(white, $value, $i * 10%);
+      }
+
+      .text-light-#{$key}-#{$i}-hover {
+        &:hover {
+          color: mix(white, $value, $i * 10%);
+        }
+      }
+
+      .bg-light-#{$key}-#{$i}-hover {
+        &:hover {
+          background-color: mix(white, $value, $i * 10%);
+        }
+      }
+
+      .text-dark-#{$key}-#{$i} {
+        color: mix(black, $value, $i * 10%);
+      }
+
+      .bg-dark-#{$key}-#{$i} {
+        background-color: mix(black, $value, $i * 10%);
+      }
+
+      .text-dark-#{$key}-#{$i}-hover {
+        &:hover {
+          color: mix(black, $value, $i * 10%);
+        }
+      }
+
+      .bg-dark-#{$key}-#{$i}-hover {
+        &:hover {
+          background-color: mix(black, $value, $i * 10%);
         }
       }
     }
@@ -101,6 +177,11 @@ $themes: (
   background-color: $color;
   color: set-text-color($color);
 }
+
+.test {
+  @include setBackground($primaryColor);
+}
+
 // FUNCTIONS
 @function set-text-color($color) {
   @if (lightness($color) > 70) {

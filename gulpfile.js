@@ -4,7 +4,10 @@ import * as sass from "sass";
 const s = gulpSass(sass);
 
 function buildStyles() {
-  return src("./scss/main.scss")
+  // multiple file output
+  // src(["./scss/main.scss", "./scss/test.scss"])
+  
+  return src(["./scss/main.scss"])
     .pipe(s().on("error", s.logError))
     .pipe(dest("./css"));
 }

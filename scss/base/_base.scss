@@ -19,11 +19,11 @@ body {
 }
 
 .light {
-  background-color: $primaryColor;
-  color: $complementaryColor;
+  background-color: $white;
+  color: $black;
 }
 
 .dark {
-  background-color: $complementaryColor;
-  color: $primaryColor;
+  background-color: $black;
+  color: $white;
 }
