@@ -1,1 +1,50 @@
 @use '../abstracts/' as *;
+
+@for $i from 1 through 9 {
+  @each $u in $util {
+    .#{$u}{
+      &-#{$i}{
+        @if($u == "p"){
+          padding: $i * 0.25em;
+        }
+        @if($u == "m"){
+          margin: $i * 0.25em;
+        }
+      }
+    }
+  @each $s in $sides {
+    .#{$u}#{$s} {
+      &-#{$i}{
+        @if( $u == "p"){
+          @if($s == "t"){
+            padding-top: $i * 0.25em;
+          }
+          @if( $s == "r"){
+            padding-right: $i * 0.25em;
+          }
+          @if( $s == "b"){
+            padding-bottom: $i * 0.25em;
+          }
+          @if( $s == "l"){
+            padding-left: $i * 0.25em;
+          }
+        }
+        @if( $u == "m"){
+          @if($s == "t"){
+            margin-top: $i * 0.25em;
+          }
+          @if( $s == "r"){
+            margin-right: $i * 0.25em;
+          }
+          @if( $s == "b"){
+            margin-bottom: $i * 0.25em;
+          }
+          @if( $s == "l"){
+            margin-left: $i * 0.25em;
+          }
+        }
+      }
+    }
+  }
+}
+}

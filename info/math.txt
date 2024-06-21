@@ -1,7 +1,7 @@
 
 @use "sass:math";
 
-give base values a unit and operate mathematically upon the base val to get pixel values for variants
+give base values a unit and operate mathematically upon the base val to get unit values for variants; i.e. px for example
 
 $base: 16px;
 $base-2: $base * 2;

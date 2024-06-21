@@ -59,3 +59,10 @@ Selects an element that is the only element of its type among a group of sibling
 
 :target:
 Applies styles to the targeted element in the URL fragment identifier.
+
+remember to look up again; is and has are the ones I wanna see again
+:is:
+:has:
+:where:
+url:
+https://www.youtube.com/watch?v=3ncFpP8GP4g

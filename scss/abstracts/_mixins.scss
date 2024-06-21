@@ -1,0 +1,5 @@
+// MIXIN: Set text color dynamically
+@mixin setBackground($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}

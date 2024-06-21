@@ -11,12 +11,17 @@
 -- page imports
 **/
 
+// reset
+@use "./base/reset";
+
 // vendor imports
 @use "./vendors/bootstrap";
 
 // base imports
 @use "./base/base";
 @use "./base/grid";
+@use "./base/colors";
+@use "./base/themes";
 
 // component imports (NOW: SCSS Modules)
 @use "./components/all";
@@ -28,13 +33,3 @@
 
 // utils imports
 @use "./utils/utils";
-
-// examples
-
-/*
-=========================
-debug
-=========================
-@debug math.div(5, 2);
-=========================
-*/

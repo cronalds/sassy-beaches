@@ -1,0 +1,70 @@
+@use "../abstracts/" as *;
+
+@each $key, $value in $colors {
+  .text-#{$key} {
+    color: $value;
+  }
+  .bg-#{$key} {
+    background-color: $value;
+  }
+
+  .text-#{$key}-hover {
+    &:hover {
+      color: $value;
+    }
+  }
+
+  .bg-#{$key}-hover {
+    &:hover {
+      background-color: $value;
+    }
+  }
+}
+
+@each $key, $value in $colors {
+  @if (
+    $value != white and $value != black and $key != "white" and $key != "black"
+  ) {
+    @for $i from 1 through 9 {
+      .text-light-#{$key}-#{$i} {
+        color: mix(white, $value, $i * 10%);
+      }
+
+      .bg-light-#{$key}-#{$i} {
+        background-color: mix(white, $value, $i * 10%);
+      }
+
+      .text-light-#{$key}-#{$i}-hover {
+        &:hover {
+          color: mix(white, $value, $i * 10%);
+        }
+      }
+
+      .bg-light-#{$key}-#{$i}-hover {
+        &:hover {
+          background-color: mix(white, $value, $i * 10%);
+        }
+      }
+
+      .text-dark-#{$key}-#{$i} {
+        color: mix(black, $value, $i * 10%);
+      }
+
+      .bg-dark-#{$key}-#{$i} {
+        background-color: mix(black, $value, $i * 10%);
+      }
+
+      .text-dark-#{$key}-#{$i}-hover {
+        &:hover {
+          color: mix(black, $value, $i * 10%);
+        }
+      }
+
+      .bg-dark-#{$key}-#{$i}-hover {
+        &:hover {
+          background-color: mix(black, $value, $i * 10%);
+        }
+      }
+    }
+  }
+}

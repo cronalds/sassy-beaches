@@ -1,4 +1,5 @@
 @use "sass:math";
+@use "./mixins" as *;
 // TYPOGRAPHY
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 $primaryFont: "Open Sans", apple-system, sans-serif;
@@ -83,113 +84,18 @@ $test: map-remove(map-get($themes, theme-1), light);
   )
 );
 
-// loop over inner maps; nested @each for nested maps
-@each $theme-name, $theme-modes in $themes {
-  .#{$theme-name} {
-    @each $mode-name, $mode-colors in $theme-modes {
-      @debug $mode-name;
-      .#{$mode-name} {
-        @each $color-name, $color-value in $mode-colors {
-          // get bool
-          @debug map-has-key($map: $mode-colors, $key: $color-name);
+$util: (
+  "p",
+  "m",
+);
 
-          // Generate CSS or debug statements as needed
-          .#{$color-name} {
-            color: $color-value;
-          }
-        }
-      }
-    }
-  }
-}
+$sides:(
+  "t",
+  "r",
+  "b",
+  "l",
+);
 
-@each $key, $value in $colors {
-  .text-#{$key} {
-    color: $value;
-  }
-  .bg-#{$key} {
-    background-color: $value;
-  }
-
-  .text-#{$key}-hover {
-    &:hover {
-      color: $value;
-    }
-  }
-
-  .bg-#{$key}-hover {
-    &:hover {
-      background-color: $value;
-    }
-  }
-}
-
-@each $key, $value in $colors {
-  @if (
-    $value != white and $value != black and $key != "white" and $key != "black"
-  ) {
-    @for $i from 1 through 9 {
-      .text-light-#{$key}-#{$i} {
-        color: mix(white, $value, $i * 10%);
-      }
-
-      .bg-light-#{$key}-#{$i} {
-        background-color: mix(white, $value, $i * 10%);
-      }
-
-      .text-light-#{$key}-#{$i}-hover {
-        &:hover {
-          color: mix(white, $value, $i * 10%);
-        }
-      }
-
-      .bg-light-#{$key}-#{$i}-hover {
-        &:hover {
-          background-color: mix(white, $value, $i * 10%);
-        }
-      }
-
-      .text-dark-#{$key}-#{$i} {
-        color: mix(black, $value, $i * 10%);
-      }
-
-      .bg-dark-#{$key}-#{$i} {
-        background-color: mix(black, $value, $i * 10%);
-      }
-
-      .text-dark-#{$key}-#{$i}-hover {
-        &:hover {
-          color: mix(black, $value, $i * 10%);
-        }
-      }
-
-      .bg-dark-#{$key}-#{$i}-hover {
-        &:hover {
-          background-color: mix(black, $value, $i * 10%);
-        }
-      }
-    }
-  }
-}
-
-// MIXIN: Set text color dynamically
-@mixin setBackground($color) {
-  background-color: $color;
-  color: set-text-color($color);
-}
-
-.test {
-  @include setBackground($primaryColor);
-}
-
-// FUNCTIONS
-@function set-text-color($color) {
-  @if (lightness($color) > 70) {
-    @return $complementaryColor;
-  } @else {
-    @return $primaryColor;
-  }
-}
 
 // BS-UTILITIES: Spacer
 $spacer: 2rem;
