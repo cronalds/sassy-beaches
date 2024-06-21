@@ -1,3 +1,5 @@
+@use "../abstracts/" as *;
+
 /*? Reset Start */
 
 * {
@@ -88,7 +90,8 @@ video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 1em;
+    font-family: $primaryFont; 
     font: inherit;
     vertical-align: baseline;
 }
