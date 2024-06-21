@@ -4,4 +4,4 @@ tech:
 - sass
 - gulp
 - gulp-sass
-- bootstrap?
+- bootstrap; implement later
