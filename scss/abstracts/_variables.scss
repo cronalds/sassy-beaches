@@ -1,0 +1,37 @@
+// TYPOGRAPHY
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+$primaryFont: 'Open Sans', apple-system, sans-serif;
+
+// COLORS (https://tailwindcss.com/docs/customizing-colors)
+$primaryColor: #FFFFFF;
+$complementaryColor: #111827;
+$complementarySkewColor: #1f2937;
+$complementaryLightColor: #374151;
+$brandColor: #60a5fa;
+$brandSkewColor: #818cf8;
+$brandDarkColor: #3b82f6;
+$highlightColor: #9ca3af;
+$highlightSkewColor: #d1d5db;
+$successColor: #16a34a;
+$errorColor: #dc2626;
+
+// THEME COLORS
+$lightMode: #eab308;
+$darkMode: #6366f1;
+
+// MIXIN: Set text color dynamically
+@mixin setBackground($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+// FUNCTIONS
+@function set-text-color($color){
+  @if(lightness($color) > 70) { 
+    @return $complementaryColor; 
+  } @else {
+    @return $primaryColor;
+  }
+}
+
+// BS-UTILITIES: Spacer
+$spacer: 2rem;

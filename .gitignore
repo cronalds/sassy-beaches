@@ -1,0 +1,32 @@
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+coverage
+*.local
+
+#//! cli cmd to remove cached file/dir if previously tracked by git; necessary to add previously committed files/dirs to ignore in future commits
+#//!----------------------------------------------------
+#//! git rm --cached <fileOrDirName/fileOrDirPath> -r
+#//!----------------------------------------------------
+#//! -r is for recursive removal(subfiles and subdirs I'm pretty sure)
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

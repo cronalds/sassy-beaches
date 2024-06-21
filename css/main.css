@@ -1,0 +1,46 @@
+/** TABLE OF CONTENTS 
+-----------------------
+-- REMINDER: abstract/variables.scss needs to be brought into components that require it! 
+
+-- vendor imports
+-- base imports
+-- component imports
+-- layout imports
+-- page imports
+**/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", apple-system, sans-serif;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.appContent {
+  margin: 1rem auto;
+  flex: 1;
+}
+
+.light {
+  background-color: #FFFFFF;
+  color: #111827;
+}
+
+.dark {
+  background-color: #111827;
+  color: #FFFFFF;
+}
+
+.customGrid {
+  display: grid;
+  margin: auto;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 800px;
+}

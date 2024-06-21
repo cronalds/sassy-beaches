@@ -1,0 +1,29 @@
+@use '../abstracts/' as *;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $primaryFont; 
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.appContent {
+  margin: 1rem auto;
+  flex: 1;
+}
+
+.light {
+  background-color: $primaryColor;
+  color: $complementaryColor;
+}
+
+.dark {
+  background-color: $complementaryColor;
+  color: $primaryColor;
+}
