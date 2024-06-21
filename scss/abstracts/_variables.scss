@@ -63,7 +63,6 @@ $themes: (
 );
 
 // need to do this to get access to the map in another map
-
 // map-get($themes, theme-1) theme-1 being the first nested map; dark being the key of a further nested map to get from theme-1 in themes
 @debug map-get(map-get($themes, theme-1), dark);
 
@@ -84,6 +83,7 @@ $test: map-remove(map-get($themes, theme-1), light);
   )
 );
 
+// no "":"" means its a list; can also be in []
 $util: (
   "p",
   "m",
