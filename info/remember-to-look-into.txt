@@ -8,3 +8,29 @@ https://www.youtube.com/watch?v=_DeC_O9S9ag&list=PL4cUxeGkcC9jS4SctqK83Ag58a0_UE
 
 @scope:
 https://www.youtube.com/watch?v=PkFuytYVqI8
+
+
+@use '../abstracts/' as *;
+
+// need to do this to get access to the map in another map
+// map-get($themes, theme-1) theme-1 being the first nested map; dark being the key of a further nested map to get from theme-1 in themes
+@debug map-get(map-get($themes, theme-1), dark);
+
+// map-get($themes, theme-1) theme-1 being the first nested map; light being the key of a further nested map in theme-1 to remove; returns a new map and leaves the original unaltered
+$test: map-remove(map-get($themes, theme-1), light);
+@debug "removed:: ", map-get(map-get($themes, theme-1), light);
+@debug $test;
+
+//map-merge
+@debug map-merge(
+  // first map
+  map-get($themes, theme-1),
+  (
+    // second
+    test: (
+      "a": "d",
+      "b": "d",
+      "c": "d",
+    ),
+  )
+);

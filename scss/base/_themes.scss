@@ -1,21 +1,2 @@
 @use "../abstracts/" as *;
 
-// loop over inner maps; nested @each for nested maps
-@each $theme-name, $theme-modes in $themes {
-  .#{$theme-name} {
-    @each $mode-name, $mode-colors in $theme-modes {
-      @debug $mode-name;
-      .#{$mode-name} {
-        @each $color-name, $color-value in $mode-colors {
-          // get bool
-          @debug map-has-key($map: $mode-colors, $key: $color-name);
-
-          // Generate CSS or debug statements as needed
-          .#{$color-name} {
-            color: $color-value;
-          }
-        }
-      }
-    }
-  }
-}

@@ -4175,31 +4175,6 @@ table {
   background-color: #181819;
 }
 
-.theme-1 .light .primary {
-  color: #eab308;
-}
-.theme-1 .light .secondary {
-  color: #eab308;
-}
-.theme-1 .light .brand {
-  color: #eab308;
-}
-.theme-1 .light .brandSkew {
-  color: #eab308;
-}
-.theme-1 .dark .primary {
-  color: #6366f1;
-}
-.theme-1 .dark .secondary {
-  color: #6366f1;
-}
-.theme-1 .dark .brand {
-  color: #6366f1;
-}
-.theme-1 .dark .brandSkew {
-  color: #6366f1;
-}
-
 .m-0 {
   margin: 0;
 }
