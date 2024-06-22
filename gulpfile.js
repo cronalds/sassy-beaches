@@ -7,21 +7,24 @@ const s = gulpSass(sass);
 function buildStyles() {
   // multiple file output
   // src(["./scss/main.scss", "./scss/test.scss"])
-  return src(["./scss/main.scss"])
+  return src(["./scss/sassy-beaches.scss"])
     .pipe(s().on("error", s.logError))
     .pipe(dest("./css"));
 }
 
 function buildMiniStyles() {
+  // run build styles first then minify
+  buildStyles();
+
   // multiple file output
   // src(["./scss/main.scss", "./scss/test.scss"])
-  return src(["./css/main.css"])
-    .pipe(cleanCSS())
+  return src(["./css/sassy-beaches.css"])
+    .pipe(cleanCSS({allowEmpty: true}))
     .pipe(dest("./css/minified"));
 }
 
 function watchTask() {
-  watch("./scss/**/*.scss", buildStyles);
+  watch("./scss/**/*.scss", buildMiniStyles);
   return Promise.resolve();
 }
 
