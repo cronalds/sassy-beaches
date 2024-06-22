@@ -28,7 +28,9 @@ npm i -g gulp
 you can just type gulp and it will run as long as you are in the correct directory.
 
 
-Currently implemented:
+##Currently implemented/TODO:
+
+- layers &&|| scope: TODO
 
 - reset: altered version of meyer reset
 
@@ -47,8 +49,13 @@ Currently implemented:
     - hover example: text-dark-yellow-7-hover ; bg variant also; light and dark
 
 - utils:
-    - margin: m, mt, mr, mb, ml; 0-30
+    - margin: m, mt, mr, mb, ml; 0-30;
         - i.e. m-0 || m-23 ; em units, 0.25em base
 
     - padding: p, pt, pr, pb, pl; 0-30;
         - i.e. p-0 || p-23 ; em units, 0.25em base
+
+
+- media/container queries: TODO
+
+- purgeCSS: TODO
