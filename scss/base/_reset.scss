@@ -114,13 +114,13 @@ time,
 mark,
 audio,
 video {
-    font-size: 1em;
+    font-size: 1rem;
     font-family: $primaryFont;
     font: inherit;
     vertical-align: baseline;
 }
 
-/* to get ch width, font-size * desired-width / 2; or something like that; ch for width of text elements due to readability; em for better responsiveness */
+/* to get ch width, font-size * desired-width / 2; or something like that; ch for width of text elements due to readability; em for better responsiveness; theoretically */
 a,
 h1,
 h2,
@@ -141,7 +141,10 @@ i,
 strong,
 b {
     min-width: 1em;
-    max-width: 37.5em;
+    width: 37.5em;
+    height: auto;
+    // max-width: 100dvw; leads to an overflow issue even with overflow: hidden, so I just use % for width.
+    max-width: 100%;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -183,7 +186,8 @@ q:after {
 
 /* Make sure textareas without a rows attribute are not tiny */
 textarea:not([rows]) {
-    min-height: 10em
+    min-height: 10em;
+    max-height: 100dvh;
 }
 
 table {
