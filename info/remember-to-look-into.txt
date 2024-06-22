@@ -9,6 +9,45 @@ https://www.youtube.com/watch?v=_DeC_O9S9ag&list=PL4cUxeGkcC9jS4SctqK83Ag58a0_UE
 @scope:
 https://www.youtube.com/watch?v=PkFuytYVqI8
 
+grid:
+https://www.youtube.com/watch?v=sKFW3wek21Q
+https://www.youtube.com/watch?v=705XCEruZFs
+https://www.youtube.com/watch?v=rg7Fvvl3taU&t=4s
+https://www.youtube.com/watch?v=xPuYbmmPdEM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @use '../abstracts/' as *;
 

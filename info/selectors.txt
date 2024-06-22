@@ -27,9 +27,9 @@
     .example .select-all-children-with-this-class{}
 
 
-    This SCSS selector targets .sibling-with-this-class-directly-next-to-it elements that are immediately preceded by .example in the HTML structure. It generates a CSS selector .example + .sibling-with-this-class-directly-next-to-it. vvv
+    This SCSS selector targets .sibling-with-this-class-directly-next-to-it-lhs elements that are immediately preceded by .example in the HTML structure. It generates a CSS selector .example + .sibling-with-this-class-directly-next-to-it-lhs. vvv
 
-    .example + .sibling-with-this-class-directly-next-to-it{}
+    .example + .sibling-with-this-class-directly-next-to-it-lhs{}
 
 
     This SCSS selector targets all direct children (* > *) of any parent element (*). It generates a CSS selector * > *, which selects all elements that are direct children of their parent.
