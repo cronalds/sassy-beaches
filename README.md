@@ -7,29 +7,38 @@ I may not have implemented it yet (still very early) but I will be making a conf
 Yes, I understand that this is a bit arrogant, web development has been around for 30ish years and I doubt I'm the only one who has tried something like this, and I know for a fact that anyone who did try this before me had far more experience than myself, but my god it's so frustrating. Perhaps hubris is the only way.
 
 tech:
-- sass(scss)
-    - ```bash
-    npm i -D sass```
-    - ```bash
-    npm i -g sass```
-- gulp
-    - ```bash
-    npm i -D gulp```
-    - ```bash
-    npm i -g gulp```
-- gulp-sass
-    - ```bash
-    npm i -D gulp-sass```
-    - ```bash
-    npm i -g gulp-sass```
-- gulp-clean-css
-    - ```bash
-    npm i -D gulp-clean-css```
-    - ```bash
-    npm i -g gulp-clean-css```
-- bootstrap; implement later... maybe; depends.
-    - ```bash
-    npm i -D bootstrap```
+    - sass(scss)
+```bash
+npm i -D sass
+```
+```bash
+npm i -g sass
+```
+    - gulp
+```bash
+npm i -D gulp
+```
+```bash
+npm i -g gulp
+```
+    - gulp-sass
+```bash
+npm i -D gulp-sass
+```
+```bash
+npm i -g gulp-sass
+```
+    - gulp-clean-css
+```bash
+npm i -D gulp-clean-css
+```
+```bash
+npm i -g gulp-clean-css
+```
+    - bootstrap; implement later... maybe; depends.
+```bash
+npm i -D bootstrap
+```
 
 ```bash
 npm run build
