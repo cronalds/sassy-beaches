@@ -4,11 +4,13 @@
 -----------------------
 -- REMINDER: abstract/variables.scss needs to be brought into components that require it! 
 
+-- reset
 -- vendor imports
 -- base imports
 -- component imports
 -- layout imports
 -- page imports
+-- utils imports
 **/
 
 // reset
@@ -30,6 +32,8 @@
 @use "./layout/layout";
 
 // page imports (OPTION: can be used as SCSS Modules if preferred)
+
+/* due to the nature of css, anything written lower on the document takes more precedence if clashing classes are used, so will win when it comes to styling, no matter which class is used first in the class assignments; therefor vendors goes at the top, and most importantly, utils goes down the bottom; pay attention to order of operation here(at least until layers and stuff are implemented) */
 
 // utils imports
 @use "./utils/utils";

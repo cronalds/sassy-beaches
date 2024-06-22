@@ -1,9 +1,36 @@
 @use "../abstracts/" as *;
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 /*? Reset Start */
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    /* color: currentColor; maybe*/
+}
+
+/* Anything that has been anchored to should have extra scroll margin; may want to adjust if you have a fixed header */
+*:target {
+    scroll-margin-block: 5ex;
 }
 
 html,
@@ -87,13 +114,34 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
     font-size: 1em;
-    font-family: $primaryFont; 
+    font-family: $primaryFont;
     font: inherit;
     vertical-align: baseline;
+}
+
+/* to get ch width, font-size * desired-width / 2; or something like that; ch for width of text elements due to readability; em for better responsiveness */
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8,
+p,
+li,
+blockquote,
+pre,
+span,
+section,
+em,
+i,
+strong,
+b {
+    min-width: 1em;
+    max-width: 37.5em;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -131,6 +179,11 @@ q:before,
 q:after {
     content: '';
     content: none;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+    min-height: 10em
 }
 
 table {
