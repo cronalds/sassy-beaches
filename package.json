@@ -1,6 +1,6 @@
 {
   "name": "sassy-beaches",
-  "version": "1.3.0",
+  "version": "1.5.0",
   "description": "a css library written in sass; will be similar to bootstrap but rather different; I may also perform petty theft on bootstrap; I don't know.",
   "main": "index.js",
   "type": "module",
@@ -21,6 +21,7 @@
   "license": "MIT",
   "devDependencies": {
     "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.77.6"
   },
