@@ -1,6 +1,6 @@
 A css library written in sass; will be similar to bootstrap but rather different; I may also perform petty theft on bootstrap; I don't know.
 
-How will it differ from bootstrap? Bootstrap is a css library that you can customize, this will be intended to be a css library builder, in essence.
+How will it differ from bootstrap? Bootstrap is a css library that you can customize, yet is still very opinionated without extensive alteration in the depth of the source, whereas this will be intended to be a css library builder that will allow for a less stressful customization approach, in essence.(still many things to work out, still getting used to scss)
 
 I may not have implemented it yet (still very early) but I will be making a configuration system for quick and simple library alteration that will be easy and powerful to extend (I may hit a brick wall with sass, but I'll just switch up to js if I have to and build my own god damn "preprocessor")
 
