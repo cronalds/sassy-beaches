@@ -36,6 +36,10 @@ Currently implemented:
 
 - base: misc base styles that will be altered heavily in the coming days; the only things that will definitively stay as they are are the utils as of right now; no color theory has been taken into account for coloring, I have just implemented basic functionalities and have the architecture in place so as to do it properly when it matters.
 
+- components: TODO
+
+- layout: TODO
+
 - colors: 16 base colors, 9 light and 9 dark variations, with bg, text, and -hover
     - base example: bg-red
     - light example: text-light-red-3
@@ -43,5 +47,8 @@ Currently implemented:
     - hover example: text-dark-yellow-7-hover ; bg variant also; light and dark
 
 - utils:
-    - margin: m, mt, mr, mb, ml 0-30; i.e. m-0 || m-23 ; em units
-    - padding: p, pt, pr, pb, pl 0-30; i.e. p-0 || p-23 ; em units
+    - margin: m, mt, mr, mb, ml; 0-30
+    i.e. m-0 || m-23 ; em units
+
+    - padding: p, pt, pr, pb, pl; 0-30;
+    i.e. p-0 || p-23 ; em units
