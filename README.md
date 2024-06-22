@@ -28,7 +28,7 @@ npm i -g gulp
 you can just type gulp and it will run as long as you are in the correct directory.
 
 
-##Currently implemented/TODO:
+## Currently implemented/TODO:
 
 - layers &&|| scope: TODO
 
