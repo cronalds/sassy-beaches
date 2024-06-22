@@ -8,19 +8,28 @@ Yes, I understand that this is a bit arrogant, web development has been around f
 
 tech:
 - sass(scss)
-    - ```bash npm i -D sass```
-    - ```bash npm i -g sass```
+    - ```bash
+    npm i -D sass```
+    - ```bash
+    npm i -g sass```
 - gulp
-    - ```bash npm i -D gulp```
-    - ```bash npm i -g gulp```
+    - ```bash
+    npm i -D gulp```
+    - ```bash
+    npm i -g gulp```
 - gulp-sass
-    - ```bash npm i -D gulp-sass```
-    - ```bash npm i -g gulp-sass```
+    - ```bash
+    npm i -D gulp-sass```
+    - ```bash
+    npm i -g gulp-sass```
 - gulp-clean-css
-    - ```bash npm i -D gulp-clean-css```
-    - ```bash npm i -g gulp-clean-css```
+    - ```bash
+    npm i -D gulp-clean-css```
+    - ```bash
+    npm i -g gulp-clean-css```
 - bootstrap; implement later... maybe; depends.
-    - ```bash npm i -D bootstrap```
+    - ```bash
+    npm i -D bootstrap```
 
 ```bash
 npm run build
