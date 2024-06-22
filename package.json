@@ -1,7 +1,7 @@
 {
   "name": "sassy-beaches",
   "version": "1.6.0",
-  "description": "a css library written in sass; will be similar to bootstrap but rather different; I may also perform petty theft on bootstrap; I don't know.",
+  "description": "A css library written in sass; will be similar to bootstrap but rather different; I may also perform petty theft on bootstrap; I don't know. How will it differ from bootstrap? Bootstrap is a css library that you can customize, this will be intended to be a css library builder, in essence.",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -9,13 +9,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "sassy-beaches"
+    "url": "sassy-beaches",
+    "description": "A css library written in sass; will be similar to bootstrap but rather different; I may also perform petty theft on bootstrap; I don't know. How will it differ from bootstrap? Bootstrap is a css library that you can customize, this will be intended to be a css library builder, in essence.",
+    "keywords": [
+    "sass",
+    "css",
+    "scss",
+    "css-library",
+    "bootstrap",
+    "bootstrap5",
+    "bootstrap-5"
+  ]
   },
   "keywords": [
     "sass",
     "css",
     "scss",
-    "css-library"
+    "css-library",
+    "bootstrap",
+    "bootstrap5",
+    "bootstrap-5"
   ],
   "author": "cronalds",
   "license": "MIT",
