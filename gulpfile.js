@@ -16,9 +16,6 @@ function buildStyles() {
 // multiple file input is possible, but I don't know about output in dest()
 
 function buildMiniStyles() {
-  // run build styles first then minify
-  buildStyles();
-
   // multiple file output
   // src(["./scss/main.scss", "./scss/test.scss"])
   return src(["./css/sassy-beaches.css"])

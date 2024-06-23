@@ -21,6 +21,7 @@
   }
 }
 
+// will refactor eventually
 @each $key, $value in $colors {
   @if (
     $value != white and $value != black and $key != "white" and $key != "black"

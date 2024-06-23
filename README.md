@@ -91,7 +91,7 @@ you can just type gulp and it will run as long as you are in the correct directo
     - light example: text-light-red-1
     - dark example: bg-dark-yellow-5
     - hover example: text-dark-yellow-9-hover ; bg variant also; light and dark
-      - other pseudo-elements/classes: TODO
+      - other pseudo-elements/classes: TODO... maybe
 
 - utils:
   - margin: m, mt, mr, mb, ml; 0-30;
