@@ -72,7 +72,7 @@ you can just type gulp and it will run as long as you are in the correct directo
 
 ## Currently implemented/TODO
 
-- gulp compilation && minification
+- gulp css compilation && minification
 
 - layers &&|| scope: TODO
 
