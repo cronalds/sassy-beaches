@@ -87,6 +87,26 @@ you can just type gulp and it will run as long as you are in the correct directo
 - layout: TODO
 
 - colors: 16 base colors, 9 light and 9 dark variations, with bg, text, and -hover
+  
+  $colors: (
+  "primary": $primaryColor,
+  "secondary": $secondaryColor,
+  "success": $successColor,
+  "error": $errorColor,
+  "warning": $warning,
+  "info": $info,
+  "blue": $blue,
+  "red": $red,
+  "yellow": $yellow,
+  "green": $green,
+  "purple": $purple,
+  "orange": $orange,
+  "pink": $pink,
+  "grey": $grey,
+  "black": $black,
+  "white": $white,
+);
+
   - base example: bg-red
     - light example: text-light-red-1
     - dark example: bg-dark-yellow-5
