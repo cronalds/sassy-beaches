@@ -80,7 +80,7 @@ you can just type gulp and it will run as long as you are in the correct directo
 
 - vendors: setup for vendors such as bootstrap; no affect, currently(maybe ever; will probably steal what I need and eject the dependency)
 
-- base: misc base styles that will be altered heavily in the coming days; the only things that will definitively stay as they are, are the utils as of right now; no color theory has been taken into account for coloring, I have just implemented basic functionalities and have the architecture in place so as to do it properly when it matters.
+- base: misc base styles that will be altered heavily in the coming days; the only things that will definitively stay as they are, are the utils as of right now; no color theory has been taken into account for coloring, I have just implemented basic functionalities and have the projects architecture in place so as to do it properly when it matters.
 
 - components: TODO
 
