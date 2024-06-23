@@ -5,10 +5,10 @@
 
 $primaryFont: "Open Sans", apple-system, sans-serif;
 
-$primaryColor: #ffffff;
-$secondaryColor: #111827;
-$successColor: #16a34a;
-$errorColor: #dc2626;
+$primary: #ffffff;
+$secondary: #111827;
+$success: #16a34a;
+$error: #dc2626;
 $warning: #f59e0b;
 $info: #3b82f6;
 $blue: #60a5fa;
@@ -23,10 +23,10 @@ $black: #111827;
 $white: #ffffff;
 
 $colors: (
-  "primary": $primaryColor,
-  "secondary": $secondaryColor,
-  "success": $successColor,
-  "error": $errorColor,
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "error": $error,
   "warning": $warning,
   "info": $info,
   "blue": $blue,

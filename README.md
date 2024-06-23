@@ -11,28 +11,16 @@ Yes, I understand that this is a bit arrogant, web development has been around f
 - sass(scss)
   
 ```bash
-npm i -D sass
-```
-
-```bash
 npm i -g sass
 ```
 
 - gulp
-  
-```bash
-npm i -D gulp
-```
 
 ```bash
 npm i -g gulp
 ```
 
 - gulp-sass
-  
-```bash
-npm i -D gulp-sass
-```
 
 ```bash
 npm i -g gulp-sass
@@ -41,19 +29,11 @@ npm i -g gulp-sass
 - gulp-clean-css
 
 ```bash
-npm i -D gulp-clean-css
-```
-
-```bash
 npm i -g gulp-clean-css
 ```
 
 - bootstrap; implement later... maybe; depends.
   
-```bash
-npm i -D bootstrap
-```
-
 ```bash
 npm run build
 
@@ -62,13 +42,11 @@ npm run build
 gulp
 ```
 
-if you have gulp installed globally i.e.
+ensure you have gulp installed globally
 
 ```bash
 npm i -g gulp
 ```
-
-you can just type gulp and it will run as long as you are in the correct directory.
 
 ## Currently implemented/TODO
 
@@ -88,10 +66,10 @@ you can just type gulp and it will run as long as you are in the correct directo
 
 - colors: 16 base colors, 9 light and 9 dark variations, with bg, text, and -hover
   
-  - $primaryColor: #ffffff;
-  - $secondaryColor: #111827;
-  - $successColor: #16a34a;
-  - $errorColor: #dc2626;
+  - $primary: #ffffff;
+  - $secondary: #111827;
+  - $success: #16a34a;
+  - $error: #dc2626;
   - $warning: #f59e0b;
   - $info: #3b82f6;
   - $blue: #60a5fa;
@@ -117,9 +95,8 @@ you can just type gulp and it will run as long as you are in the correct directo
   - padding: p, pt, pr, pb, pl; 0-30;
     - i.e. p-0 || p-23 ; em units, 0.25em base
 
-  - width/height: TODO
+- width/height: TODO
 
 - media/container queries: TODO
 
 - purgeCSS: TODO
-  
