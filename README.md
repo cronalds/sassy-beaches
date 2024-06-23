@@ -88,24 +88,22 @@ you can just type gulp and it will run as long as you are in the correct directo
 
 - colors: 16 base colors, 9 light and 9 dark variations, with bg, text, and -hover
   
-  $colors: (
-  "primary": $primaryColor,
-  "secondary": $secondaryColor,
-  "success": $successColor,
-  "error": $errorColor,
-  "warning": $warning,
-  "info": $info,
-  "blue": $blue,
-  "red": $red,
-  "yellow": $yellow,
-  "green": $green,
-  "purple": $purple,
-  "orange": $orange,
-  "pink": $pink,
-  "grey": $grey,
-  "black": $black,
-  "white": $white,
-);
+  $primaryColor: #ffffff;
+$secondaryColor: #111827;
+$successColor: #16a34a;
+$errorColor: #dc2626;
+$warning: #f59e0b;
+$info: #3b82f6;
+$blue: #60a5fa;
+$red: #ef4444;
+$yellow: #f59e0b;
+$green: #16a34a;
+$purple: #a855f7;
+$orange: #f97316;
+$pink: #ec4899;
+$grey: #868688;
+$black: #111827;
+$white: #ffffff;
 
   - base example: bg-red
     - light example: text-light-red-1
