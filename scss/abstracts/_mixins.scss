@@ -1,33 +1,33 @@
-@mixin pseudo($clr){
+@mixin pseudo($clr, $key, $i) {
   &-hover {
-      &:hover {
-        color: $clr;
-      }
+    &:hover {
+      color: $clr;
     }
-  
-    &-active {
-      &:active {
-        color: $clr;
-      }
+  }
+
+  &-active {
+    &:active {
+      color: $clr;
     }
-  
-    &-focus {
-      &:focus {
-        color: $clr;
-      }
+  }
+
+  &-focus {
+    &:focus {
+      color: $clr;
     }
-  
-    &-checked {
-      &:checked {
-        color: $clr;
-      }
+  }
+
+  &-checked {
+    &:checked {
+      color: $clr;
     }
-  
-    &-disabled {
-      &:disabled {
-        color: $clr;
-      }
+  }
+
+  &-disabled {
+    &:disabled {
+      color: $clr;
     }
+  }
 }
 
 @mixin colorsBase($colorArray) {
@@ -46,25 +46,32 @@
 
 @mixin colorsLightDark($colorArray, $intFrom, $intTo) {
   @each $key, $value in $colorArray {
-    @for $i from $intFrom through $intTo {
-      .text-light-#{$key}-#{$i} {
-        color: mix(white, $value, $i * 10%);
-        @include pseudo(mix(white, $value, $i * 10%));
-      }
+    @if($key !="black" and $key !="white" and $value !=black and $value !=white) {
+      @for $i from $intFrom through $intTo {
 
-      .bg-light-#{$key}-#{$i} {
-        background-color: mix(white, $value, $i * 10%);
-        @include pseudo(mix(white, $value, $i * 10%));
-      }
+        /* light #{$key} text #{$i} */
+        .text-light-#{$key}-#{$i} {
+          color: mix(white, $value, $i * 10%);
+          @include pseudo(mix(white, $value, $i * 10%));
+        }
 
-      .text-dark-#{$key}-#{$i} {
-        color: mix(black, $value, $i * 10%);
-        @include pseudo(mix(black, $value, $i * 10%));
-      }
+        /* light #{$key} bg #{$i} */
+        .bg-light-#{$key}-#{$i} {
+          background-color: mix(white, $value, $i * 10%);
+          @include pseudo(mix(white, $value, $i * 10%));
+        }
 
-      .bg-dark-#{$key}-#{$i} {
-        background-color: mix(black, $value, $i * 10%);
-        @include pseudo(mix(black, $value, $i * 10%));
+        /* dark #{$key} text #{$i} */
+        .text-dark-#{$key}-#{$i} {
+          color: mix(black, $value, $i * 10%);
+          @include pseudo(mix(black, $value, $i * 10%));
+        }
+
+        /* dark #{$key} bg #{$i} */
+        .bg-dark-#{$key}-#{$i} {
+          background-color: mix(black, $value, $i * 10%);
+          @include pseudo(mix(black, $value, $i * 10%));
+        }
       }
     }
   }
