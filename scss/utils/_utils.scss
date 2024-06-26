@@ -1,7 +1,7 @@
 @use '../abstracts/' as *;
 
 /*
-any margin or padding 0 has less specificity than auto, and auto has less than any numbered value
+any margin or padding 0 has less specificity than auto, and margin auto has less than any numbered value
 */
 
 .m-0 {

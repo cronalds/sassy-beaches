@@ -23,9 +23,18 @@ function buildMiniStyles() {
     .pipe(dest("./css/minified"));
 }
 
-function watchTask() {
+function watchMainBuild() {
+  watch("./scss/**/*.scss", buildStyles);
+  return Promise.resolve();
+}
+
+function watchMiniBuild() {
   watch("./scss/**/*.scss", buildMiniStyles);
   return Promise.resolve();
 }
 
-export default series(buildStyles, buildMiniStyles, watchTask);
+function watchTasks() {
+  watch("./scss/**/*.scss", series(watchMainBuild, watchMiniBuild));
+}
+
+export default series(buildStyles, buildMiniStyles, watchTasks);

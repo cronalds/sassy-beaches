@@ -81,7 +81,7 @@
 
       .text-dark-#{$key}-#{$i}-hover {
         &:hover {
-          color: mix(black, $value, $i * 10%);
+          color: mix(black, $value, $i * 10%); 
         }
       }
 
