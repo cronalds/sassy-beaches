@@ -33,16 +33,12 @@ npm i -g gulp-clean-css
 ```
 
 - bootstrap; implement later... maybe; depends.
-  
+
 ```bash
-npm run build
-
-// or
-
-gulp
+npm i bootstrap
 ```
 
-ensure you have gulp installed globally
+ensure you have gulp installed globally to do pretty much anything here; no gulp no build or minification.(you can still build with sass cli or watch extension but you won't be able to minify from my knowledge)
 
 ```bash
 npm i -g gulp
