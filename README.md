@@ -92,7 +92,7 @@ npm i -g gulp
   - margin: m, mt, mr, mb, ml; 0-30 + auto;
     - i.e. m-0 || m-23 ; em units, 0.25em base
 
-  - padding: p, pt, pr, pb, pl; 0-30 + auto;
+  - padding: p, pt, pr, pb, pl; 0-30;
     - i.e. p-0 || p-23 ; em units, 0.25em base
 
   - width/height: TODO

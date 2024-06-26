@@ -64,26 +64,6 @@ any margin or padding 0 has less specificity than auto, and auto has less than a
   margin-left: auto;
 }
 
-.p-auto {
-  padding: auto;
-}
-
-.pt-auto {
-  padding-top: auto;
-}
-
-.pr-auto {
-  padding-right: auto;
-}
-
-.pb-auto {
-  padding-bottom: auto;
-}
-
-.pl-auto {
-  padding-left: auto;
-}
-
 @for $i from 1 through 30 {
   @each $u in $util {
     .#{$u}{
