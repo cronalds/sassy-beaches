@@ -84,9 +84,9 @@ npm i -g gulp
       - dark example: bg-dark-yellow-5
       - hover example: text-dark-yellow-9-hover ; bg variant also; light and dark
       - active example: text-light-green-3-active ; bg variant also; light and dark
-      - focus example: bg-blue-3-active ; bg variant also; light and dark
+      - focus example: bg-blue-3-focus ; bg variant also; light and dark
       - checked example: text-grey-3-checked ; bg variant also; light and dark
-      - disabled example: text-grey-3-checked ; bg variant also; light and dark
+      - disabled example: text-grey-3-disabled ; bg variant also; light and dark
 
 - utils:
   - margin: m, mt, mr, mb, ml; 0-30 + auto;
