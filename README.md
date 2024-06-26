@@ -60,7 +60,7 @@ npm i -g gulp
 
 - layout: TODO
 
-- colors: 16 base colors, 9 light and 9 dark variations, with bg, text, and -hover
+- colors: 16 base colors, 9 light and 9 dark variations, with bg, text, and -hover, -active, -focus, -checked, -disabled pseudoclasses. BLACK AND WHITE HAVE NO NUMBERED VARIANTS
   
   - $primary: #ffffff;
   - $secondary: #111827;
@@ -84,6 +84,9 @@ npm i -g gulp
       - dark example: bg-dark-yellow-5
       - hover example: text-dark-yellow-9-hover ; bg variant also; light and dark
       - active example: text-light-green-3-active ; bg variant also; light and dark
+      - focus example: bg-blue-3-active ; bg variant also; light and dark
+      - checked example: text-grey-3-checked ; bg variant also; light and dark
+      - disabled example: text-grey-3-checked ; bg variant also; light and dark
 
 - utils:
   - margin: m, mt, mr, mb, ml; 0-30 + auto;

@@ -4,6 +4,7 @@
   .text-#{$key} {
     color: $value;
   }
+
   .bg-#{$key} {
     background-color: $value;
   }
@@ -20,14 +21,50 @@
     }
   }
 
-    .text-#{$key}-active {
-      &:active {
+  .text-#{$key}-active {
+    &:active {
+      color: $value;
+    }
+  }
+
+  .bg-#{$key}-active {
+    &:active {
+      background-color: $value;
+    }
+  }
+
+  .text-#{$key}-focus {
+    &:focus {
+      color: $value;
+    }
+  }
+
+  .bg-#{$key}-focus {
+    &:focus {
+      background-color: $value;
+    }
+  }
+
+  .text-#{$key}-checked {
+    &:checked {
+      color: $value;
+    }
+  }
+
+  .bg-#{$key}-checked {
+    &:checked {
+      background-color: $value;
+    }
+  }
+
+    .text-#{$key}-disabled {
+      &:disabled {
         color: $value;
       }
     }
   
-    .bg-#{$key}-active {
-      &:active {
+    .bg-#{$key}-disabled {
+      &:disabled {
         background-color: $value;
       }
     }
@@ -35,8 +72,8 @@
 
 // will refactor eventually
 @each $key, $value in $colors {
-  @if (
-    $value != white and $value != black and $key != "white" and $key != "black"
+  @if ($value !=white and $value !=black and $key !="white" and $key !="black"
+
   ) {
     @for $i from 1 through 9 {
       .text-light-#{$key}-#{$i} {
@@ -59,14 +96,50 @@
         }
       }
 
-            .text-light-#{$key}-#{$i}-active {
-              &:active {
+      .text-light-#{$key}-#{$i}-active {
+        &:active {
+          color: mix(white, $value, $i * 10%);
+        }
+      }
+
+      .bg-light-#{$key}-#{$i}-active {
+        &:active {
+          background-color: mix(white, $value, $i * 10%);
+        }
+      }
+
+      .text-light-#{$key}-#{$i}-focus {
+        &:focus {
+          color: mix(white, $value, $i * 10%);
+        }
+      }
+
+      .bg-light-#{$key}-#{$i}-focus {
+        &:focus {
+          background-color: mix(white, $value, $i * 10%);
+        }
+      }
+
+      .text-light-#{$key}-#{$i}-checked {
+        &:checked {
+          color: mix(white, $value, $i * 10%);
+        }
+      }
+
+      .bg-light-#{$key}-#{$i}-checked {
+        &:checked {
+          background-color: mix(white, $value, $i * 10%);
+        }
+      }
+
+            .text-light-#{$key}-#{$i}-disabled {
+              &:disabled {
                 color: mix(white, $value, $i * 10%);
               }
             }
       
-            .bg-light-#{$key}-#{$i}-active {
-              &:active {
+            .bg-light-#{$key}-#{$i}-disabled {
+              &:disabled {
                 background-color: mix(white, $value, $i * 10%);
               }
             }
@@ -81,7 +154,7 @@
 
       .text-dark-#{$key}-#{$i}-hover {
         &:hover {
-          color: mix(black, $value, $i * 10%); 
+          color: mix(black, $value, $i * 10%);
         }
       }
 
@@ -91,14 +164,50 @@
         }
       }
 
-            .text-dark-#{$key}-#{$i}-active {
-              &:active {
+      .text-dark-#{$key}-#{$i}-active {
+        &:active {
+          color: mix(black, $value, $i * 10%);
+        }
+      }
+
+      .bg-dark-#{$key}-#{$i}-active {
+        &:active {
+          background-color: mix(black, $value, $i * 10%);
+        }
+      }
+
+      .text-dark-#{$key}-#{$i}-focus {
+        &:focus {
+          color: mix(black, $value, $i * 10%);
+        }
+      }
+
+      .bg-dark-#{$key}-#{$i}-focus {
+        &:focus {
+          background-color: mix(black, $value, $i * 10%);
+        }
+      }
+
+      .text-dark-#{$key}-#{$i}-checked {
+        &:checked {
+          color: mix(black, $value, $i * 10%);
+        }
+      }
+
+      .bg-dark-#{$key}-#{$i}-checked {
+        &:checked {
+          background-color: mix(black, $value, $i * 10%);
+        }
+      }
+
+            .text-dark-#{$key}-#{$i}-disabled {
+              &:disabled {
                 color: mix(black, $value, $i * 10%);
               }
             }
       
-            .bg-dark-#{$key}-#{$i}-active {
-              &:active {
+            .bg-dark-#{$key}-#{$i}-disabled {
+              &:disabled {
                 background-color: mix(black, $value, $i * 10%);
               }
             }
