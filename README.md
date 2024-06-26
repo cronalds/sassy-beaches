@@ -89,13 +89,13 @@ npm i -g gulp
       - hover example: text-dark-yellow-9-hover ; bg variant also; light and dark
 
 - utils:
-  - margin: m, mt, mr, mb, ml; 0-30;
+  - margin: m, mt, mr, mb, ml; 0-30 + auto;
     - i.e. m-0 || m-23 ; em units, 0.25em base
 
-  - padding: p, pt, pr, pb, pl; 0-30;
+  - padding: p, pt, pr, pb, pl; 0-30 + auto;
     - i.e. p-0 || p-23 ; em units, 0.25em base
 
-- width/height: TODO
+  - width/height: TODO
 
 - media/container queries: TODO
 

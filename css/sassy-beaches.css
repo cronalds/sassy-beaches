@@ -4233,6 +4233,9 @@ table {
 }
 
 /* due to the nature of css, anything written lower on the document takes more precedence if clashing classes are used, so will win when it comes to styling, no matter which class is used first in the class assignments; therefor vendors goes at the top, and most importantly, utils goes down the bottom; pay attention to order of operation here(at least until layers and stuff are implemented) */
+/*
+any margin or padding 0 has less specificity than auto, and auto has less than any numbered value
+*/
 .m-0 {
   margin: 0;
 }
@@ -4271,6 +4274,46 @@ table {
 
 .pl-0 {
   padding-left: 0;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.p-auto {
+  padding: auto;
+}
+
+.pt-auto {
+  padding-top: auto;
+}
+
+.pr-auto {
+  padding-right: auto;
+}
+
+.pb-auto {
+  padding-bottom: auto;
+}
+
+.pl-auto {
+  padding-left: auto;
 }
 
 .p-1 {
