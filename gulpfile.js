@@ -1,5 +1,4 @@
 import { src, dest, watch, series } from "gulp";
-
 import gulpSass from "gulp-sass";
 import * as sass from "sass";
 import cleanCSS from "gulp-clean-css";
@@ -13,8 +12,6 @@ function buildStyles() {
     .pipe(dest("./css"));
 }
 
-// multiple file input is possible, but I don't know about output in dest()
-
 function buildMiniStyles() {
   // multiple file output
   // src(["./scss/main.scss", "./scss/test.scss"])
@@ -24,7 +21,7 @@ function buildMiniStyles() {
 }
 
 function watchTasks() {
-  // add anything you want to watch in the order it needs to be watched in the series function
+  // add anything you want to watch in the order it needs to be watched in, in the series function
   watch("./scss/**/*.scss", series(buildStyles, buildMiniStyles));
 }
 
