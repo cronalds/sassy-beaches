@@ -24,6 +24,7 @@ function buildMiniStyles() {
 }
 
 function watchTasks() {
+  // add anything you want to watch in the order it needs to be watched in the series function
   watch("./scss/**/*.scss", series(buildStyles, buildMiniStyles));
 }
 
