@@ -1,4 +1,4 @@
-@mixin pseudo($clr, $key, $i) {
+@mixin pseudo($clr) {
   &-hover {
     &:hover {
       color: $clr;
@@ -32,11 +32,12 @@
 
 @mixin colorsBase($colorArray) {
   @each $key, $value in $colorArray {
+    /* #{$key} text */
     .text-#{$key} {
       color: $value;
       @include pseudo($value);
     }
-
+        /* #{$key} bg */
     .bg-#{$key} {
       background-color: $value;
       @include pseudo($value);

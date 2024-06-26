@@ -232,6 +232,7 @@ table {
   max-width: 800px;
 }
 
+/* primary text */
 .text-primary {
   color: #ffffff;
 }
@@ -251,6 +252,7 @@ table {
   color: #ffffff;
 }
 
+/* primary bg */
 .bg-primary {
   background-color: #ffffff;
 }
@@ -270,6 +272,7 @@ table {
   color: #ffffff;
 }
 
+/* secondary text */
 .text-secondary {
   color: #111827;
 }
@@ -289,6 +292,7 @@ table {
   color: #111827;
 }
 
+/* secondary bg */
 .bg-secondary {
   background-color: #111827;
 }
@@ -308,6 +312,7 @@ table {
   color: #111827;
 }
 
+/* success text */
 .text-success {
   color: #16a34a;
 }
@@ -327,6 +332,7 @@ table {
   color: #16a34a;
 }
 
+/* success bg */
 .bg-success {
   background-color: #16a34a;
 }
@@ -346,6 +352,7 @@ table {
   color: #16a34a;
 }
 
+/* error text */
 .text-error {
   color: #dc2626;
 }
@@ -365,6 +372,7 @@ table {
   color: #dc2626;
 }
 
+/* error bg */
 .bg-error {
   background-color: #dc2626;
 }
@@ -384,6 +392,7 @@ table {
   color: #dc2626;
 }
 
+/* warning text */
 .text-warning {
   color: #f59e0b;
 }
@@ -403,6 +412,7 @@ table {
   color: #f59e0b;
 }
 
+/* warning bg */
 .bg-warning {
   background-color: #f59e0b;
 }
@@ -422,6 +432,7 @@ table {
   color: #f59e0b;
 }
 
+/* info text */
 .text-info {
   color: #3b82f6;
 }
@@ -441,6 +452,7 @@ table {
   color: #3b82f6;
 }
 
+/* info bg */
 .bg-info {
   background-color: #3b82f6;
 }
@@ -460,6 +472,7 @@ table {
   color: #3b82f6;
 }
 
+/* blue text */
 .text-blue {
   color: #60a5fa;
 }
@@ -479,6 +492,7 @@ table {
   color: #60a5fa;
 }
 
+/* blue bg */
 .bg-blue {
   background-color: #60a5fa;
 }
@@ -498,6 +512,7 @@ table {
   color: #60a5fa;
 }
 
+/* red text */
 .text-red {
   color: #ef4444;
 }
@@ -517,6 +532,7 @@ table {
   color: #ef4444;
 }
 
+/* red bg */
 .bg-red {
   background-color: #ef4444;
 }
@@ -536,6 +552,7 @@ table {
   color: #ef4444;
 }
 
+/* yellow text */
 .text-yellow {
   color: #f59e0b;
 }
@@ -555,6 +572,7 @@ table {
   color: #f59e0b;
 }
 
+/* yellow bg */
 .bg-yellow {
   background-color: #f59e0b;
 }
@@ -574,6 +592,7 @@ table {
   color: #f59e0b;
 }
 
+/* green text */
 .text-green {
   color: #16a34a;
 }
@@ -593,6 +612,7 @@ table {
   color: #16a34a;
 }
 
+/* green bg */
 .bg-green {
   background-color: #16a34a;
 }
@@ -612,6 +632,7 @@ table {
   color: #16a34a;
 }
 
+/* purple text */
 .text-purple {
   color: #a855f7;
 }
@@ -631,6 +652,7 @@ table {
   color: #a855f7;
 }
 
+/* purple bg */
 .bg-purple {
   background-color: #a855f7;
 }
@@ -650,6 +672,7 @@ table {
   color: #a855f7;
 }
 
+/* orange text */
 .text-orange {
   color: #f97316;
 }
@@ -669,6 +692,7 @@ table {
   color: #f97316;
 }
 
+/* orange bg */
 .bg-orange {
   background-color: #f97316;
 }
@@ -688,6 +712,7 @@ table {
   color: #f97316;
 }
 
+/* pink text */
 .text-pink {
   color: #ec4899;
 }
@@ -707,6 +732,7 @@ table {
   color: #ec4899;
 }
 
+/* pink bg */
 .bg-pink {
   background-color: #ec4899;
 }
@@ -726,6 +752,7 @@ table {
   color: #ec4899;
 }
 
+/* grey text */
 .text-grey {
   color: #868688;
 }
@@ -745,6 +772,7 @@ table {
   color: #868688;
 }
 
+/* grey bg */
 .bg-grey {
   background-color: #868688;
 }
@@ -764,6 +792,7 @@ table {
   color: #868688;
 }
 
+/* black text */
 .text-black {
   color: #111827;
 }
@@ -783,6 +812,7 @@ table {
   color: #111827;
 }
 
+/* black bg */
 .bg-black {
   background-color: #111827;
 }
@@ -802,6 +832,7 @@ table {
   color: #111827;
 }
 
+/* white text */
 .text-white {
   color: #ffffff;
 }
@@ -821,6 +852,7 @@ table {
   color: #ffffff;
 }
 
+/* white bg */
 .bg-white {
   background-color: #ffffff;
 }
