@@ -1,6 +1,6 @@
 # A css library written in sass; will be similar to bootstrap but rather different; I may also perform petty theft on bootstrap; I don't know
 
-How will it differ from bootstrap? Bootstrap is a css library that you can customize, yet is still very opinionated without extensive alteration in the depth of the source, whereas this will be intended to be a css library builder that will allow for a less stressful customization approach using switches and variables, whilst maintaining appropriate standards; i.e. using em for margin and padding, rem for font size, appropriate color contrast, an attempt at appropriate selecting and layering/scoping as opposed to going nuclear(!important), etc, etc.(still many things to work out, still getting used to scss)
+How will it differ from bootstrap? Bootstrap is a css library that you can customize, yet is still very opinionated without extensive alteration in the depth of the source, whereas this will be intended to be a css library builder that will allow for a less stressful customization approach using switches and variables, whilst maintaining appropriate standards; i.e. using em for margin and padding, rem for font size, appropriate color contrast, an attempt at appropriate selecting and layering/scoping as opposed to going nuclear(!important), % for width, dvh for height etc, etc.(still many things to work out, still getting used to scss)
 
 I may not have implemented it yet (still very early) but I will be making a configuration system for quick and simple library alteration that will be easy and powerful to extend (I may hit a brick wall with sass, but I'll just switch up to js if I have to and build my own damn "preprocessor")
 
@@ -87,6 +87,7 @@ npm i -g gulp
       - light example: text-light-red-1
       - dark example: bg-dark-yellow-5
       - hover example: text-dark-yellow-9-hover ; bg variant also; light and dark
+      - active example: text-light-green-3-active ; bg variant also; light and dark
 
 - utils:
   - margin: m, mt, mr, mb, ml; 0-30 + auto;
