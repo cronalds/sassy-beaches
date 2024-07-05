@@ -1,4 +1,6 @@
-# A css library written in sass; will be similar to bootstrap but rather different; I may also perform petty theft on bootstrap; I don't know
+# I AM ABANDONING THIS BECAUSE SCSS IS ANNOYING TO WORK WITH BASED OFF OF THE WEIRD LIMITATIONS IT SETS ON HOW I CAN AND CANNOT USE @USE/INCLUDE/ETC,ETC; I'M JUST GOING TO MAKE A JAVASCRIPT CSS PREPROCESSING SOLUTION BECAUSE DOING IT MYSELF SEEMS AS THOUGH IT WILL ACTUALLY BE EASIER WHICH IS ABSURD; I WILL BE NAMING THE PROJECT "JASS" FOR "JAVASCRIPTS ABSTRACTED STYLING SOLUTION"
+
+#### A css library written in sass; will be similar to bootstrap but rather different; I may also perform petty theft on bootstrap; I don't know
 
 How will it differ from bootstrap? Bootstrap is a css library that you can customize, yet is still very opinionated without extensive alteration in the depth of the source, whereas this will be intended to be a css library builder that will allow for a less stressful customization approach using switches and variables, whilst maintaining appropriate standards; i.e. using em for margin and padding, rem for font size, appropriate color contrast, an attempt at appropriate selecting and layering/scoping as opposed to going nuclear(!important), % for max/min width, dvw for width, dvh for height etc, etc.(still many things to work out, still getting used to scss)
 

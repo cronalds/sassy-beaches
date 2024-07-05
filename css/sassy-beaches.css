@@ -10257,6 +10257,26 @@ any margin or padding 0 has less specificity than auto, and margin auto has less
   margin-left: 0;
 }
 
+.m-auto {
+  margin: auto;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
 /* padding */
 .p-0 {
   padding: 0;
@@ -10276,27 +10296,6 @@ any margin or padding 0 has less specificity than auto, and margin auto has less
 
 .pl-0 {
   padding-left: 0;
-}
-
-/* m autos */
-.m-auto {
-  margin: auto;
-}
-
-.mt-auto {
-  margin-top: auto;
-}
-
-.mr-auto {
-  margin-right: auto;
-}
-
-.mb-auto {
-  margin-bottom: auto;
-}
-
-.ml-auto {
-  margin-left: auto;
 }
 
 /* p 1 */
