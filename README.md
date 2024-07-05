@@ -1,10 +1,8 @@
 # I AM ABANDONING THIS BECAUSE SCSS IS ANNOYING TO WORK WITH BASED OFF OF THE WEIRD LIMITATIONS IT SETS ON HOW I CAN AND CANNOT USE @USE/INCLUDE/ETC,ETC; I'M JUST GOING TO MAKE A JAVASCRIPT CSS PREPROCESSING SOLUTION BECAUSE DOING IT MYSELF SEEMS AS THOUGH IT WILL ACTUALLY BE EASIER WHICH IS ABSURD; I WILL BE NAMING THE PROJECT "JASS" FOR "JAVASCRIPTS ABSTRACTED STYLING SOLUTION"
 
-#### A css library written in sass; will be similar to bootstrap but rather different; I may also perform petty theft on bootstrap; I don't know
+#### A css library written in sass; only good as a starter scss project to get things going; you will need to clean a few things as I have killed this and will not bother redacting the changes that I made which have lead to my final decision as well as a compilation error.
 
 How will it differ from bootstrap? Bootstrap is a css library that you can customize, yet is still very opinionated without extensive alteration in the depth of the source, whereas this will be intended to be a css library builder that will allow for a less stressful customization approach using switches and variables, whilst maintaining appropriate standards; i.e. using em for margin and padding, rem for font size, appropriate color contrast, an attempt at appropriate selecting and layering/scoping as opposed to going nuclear(!important), % for max/min width, dvw for width, dvh for height etc, etc.(still many things to work out, still getting used to scss)
-
-I may not have implemented it yet (still very early) but I will be making a configuration system for quick and simple library alteration that will be easy and powerful to extend (I may hit a brick wall with sass, but I'll just switch up to js if I have to and build my own damn "preprocessor")
 
 Yes, I understand that this is a bit arrogant, web development has been around for 30ish years and I doubt I'm the only one who has tried something like this, and I know for a fact that anyone who did try this before me had far more experience than myself, but my god it's so frustrating.
 
