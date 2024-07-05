@@ -58,10 +58,6 @@ npm i -g gulp
 
 - base: misc base styles that will be altered heavily in the coming days; the only things that will definitively stay as they are, are the utils as of right now; no color theory has been taken into account for coloring, I have just implemented basic functionalities and have the projects architecture in place so as to do it properly when it matters.
 
-- components: TODO
-
-- layout: TODO
-
 - colors: 16 base colors, 9 light and 9 dark variations, with bg, text, and -hover, -active, -focus, -checked, -disabled pseudoclasses. BLACK AND WHITE HAVE NO NUMBERED VARIANTS
   
   - $primary: #ffffff;
@@ -96,11 +92,3 @@ npm i -g gulp
 
   - padding: p, pt, pr, pb, pl; 0-30;
     - i.e. p-0 || p-23 ; em units, 0.25em base
-
-  - width/height: TODO
-
-- media/container queries: TODO
-
-- purgeCSS: TODO
-
-- a lot more: TODO
